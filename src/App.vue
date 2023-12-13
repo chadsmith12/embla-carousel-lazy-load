@@ -11,8 +11,10 @@ const images = ref([iamge1, iamge2, iamge3, iamge4])
 </script>
 
 <template>
-  <div>
-    <EmblaCarousel :images="images" />
-  </div>
+  <main class="sandbox">
+    <section class="sandbox__carousel">
+      <EmblaCarousel :images="images" />
+    </section>
+  </main>
 </template>
 
