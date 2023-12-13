@@ -1,18 +1,10 @@
-# Vue 3 + TypeScript + Vite
+# Embla Carousel Lazy Load Demo
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This demo shows an implementation of lazy loading on a carousel using the [Embla Carousel](https://www.embla-carousel.com/). This demo uses the embla-carousel-vue component wrapper. The main inspiration and source of this demo was from the React Version located [here](https://codesandbox.io/p/sandbox/embla-carousel-lazy-load-react-xgnzq8?file=%2Fsrc%2Fjs%2FEmblaCarousel.tsx%3A44%2C22). This demo was converted to Vue 3 and uses Typescript.
 
-## Recommended IDE Setup
+## Running Demo
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Running the demo is simple. First install the dependencies using `npm install`. Once the dependencies are installed then run the demo using `npm run dev`.
 
-## Type Support For `.vue` Imports in TS
+There is a small `setTimeout` right before new images are loaded just to demonstrate that the images are actually lazy loaded. Iamges aren't loaded are really just a transparent placeholder image being shown right now.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
